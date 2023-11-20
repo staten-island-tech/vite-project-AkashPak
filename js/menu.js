@@ -1,4 +1,4 @@
-export const Menu = [
+ const Menu = [
   {
     ItemName: "Fried Chicken",
     ItemSize: "Family",
@@ -96,3 +96,4 @@ export const Menu = [
       "https://th.bing.com/th/id/R.fca48b13c3ceda7275fb2333765dd4d5?rik=8GEcZWC7aoj6%2fQ&pid=ImgRaw&r=0.jpg",
   },
 ];
+export{Menu}

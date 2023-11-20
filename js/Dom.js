@@ -7,5 +7,5 @@ const DomSelectors={
   Sides: document.querySelector(".Sides"),
   Dessert: document.querySelector(".dessert"),
   Drinks: document.querySelector(".Drinks"),
-
 }
+export{DomSelectors}
