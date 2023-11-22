@@ -1,4 +1,4 @@
- const Menu = [
+  const Menu = [
   {
     ItemName: "Fried Chicken",
     ItemSize: "Family",
