@@ -6,16 +6,14 @@ import { Menu } from './menu.js'
 
 
 
-
-Menu.forEach((bang)=> document.querySelector(".whole").insertAdjacentHTML("beforebegin",
+function Insert(a){    
+a.forEach((dawd)=>document.querySelector(".flex-container").insertAdjacentHTML("beforebegin",
 `<div>
-<h1 class="Itemtitle"> ${bang.ItemName.value}</h1>
-<h2 class="ItemPrice"> ${bang.ItemPrice.value}</h2>
-<img src=${bang.ItemImage.value} alt="" class="ItemImage">
-</div>`))
+<h1 class="Itemtitle"> ${dawd.ItemName.value}</h1>
+<h2 class="ItemPrice"> ${dawd.ItemPrice.value}</h2>
+<img src= "${dawd.ItemImage.value}" alt="" class="ItemImage">
+</div>`));}
+Insert(Menu)
 
-
-Menu.filter.forEach((Adsa)=>  document.querySelector(".Family Serving").insertAdjacentHTML("beforebegin",
-`<div>
-<h1 class="Itemtitle"> ${Adsa}
-`),)
+DomSelectors.wholemen.addEventListener("click",
+Insert(Menu))
