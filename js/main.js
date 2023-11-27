@@ -6,10 +6,16 @@ import { Menu } from './menu.js'
 
 
 
-document.querySelector(".whole").insertAdjacentHTML("beforebegin",function(){
-Menu.forEach((bang)=>`<div>
+
+Menu.forEach((bang)=> document.querySelector(".whole").insertAdjacentHTML("beforebegin",
+`<div>
 <h1 class="Itemtitle"> ${bang.ItemName.value}</h1>
 <h2 class="ItemPrice"> ${bang.ItemPrice.value}</h2>
 <img src=${bang.ItemImage.value} alt="" class="ItemImage">
-</div>`)})
+</div>`))
 
+
+Menu.filter.forEach((Adsa)=>  document.querySelector(".Family Serving").insertAdjacentHTML("beforebegin",
+`<div>
+<h1 class="Itemtitle"> ${Adsa}
+`),)
