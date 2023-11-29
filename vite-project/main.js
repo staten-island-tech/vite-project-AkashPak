@@ -11,9 +11,8 @@ import { Menu } from './menu.js'
 
 
 function Insert(dfw){    
-    console.log(dfw)
 dfw.forEach((d)=> document.querySelector(".flex-container").insertAdjacentHTML("beforebegin",
-`<div>
+`<div class="Card">
 <h1 class="Itemtitle">${d.ItemName}</h1>
 <h2 class="ItemPrice">${d.ItemPrice}</h2>
 <img src= "${d.ItemImage}" alt="" class="ItemImage">

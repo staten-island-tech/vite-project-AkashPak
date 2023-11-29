@@ -1,65 +1,50 @@
 
 
 
-.title {
-  text-align: center;
-  font-family: 'Croissant One', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
+
+.body{
+  color: cornflowerblue;
 }
-.body {
-  font-size: 10px;
-  box-sizing: border-box;
-  margin-bottom: 0;
-  padding: 0;}
 
-  .card-img {
-  width: 100%;
-
-
-}
-.card {
-  background-color: azure;
-  width: 27vw;
-  height: 55vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 3px 3px 3px;
-  margin-bottom: 40px;
-  box-shadow: 5px 7px skyblue;
-  transition: 1s;
-  font-family: 'Croissant One', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
-
-
-
-
-
-}
-.flex-container {
+.flex-container{
   display: flex;
   flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    
+ 
+ }
+
+ .Itemtitle{
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.Card{
+  display: flex;
+  margin-top: 100px;
+  width: 26%;
+  height: 100%;
+ align-items: center;
+ flex-direction: column;
+ background-color:aqua ;
+ border-radius: aquamarine 5px;
+ border: 2mm ridge rgba(50, 200, 220, 0.798);
+ padding:white 10px 10px 10px 10px;
+}
+.ItemImage{
+ height: 2000px;
+ width: 5vw;
 }
 
-.card-desc {
-  font-size: 1.3rem;
-}
-.card-title {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-.title{
-  font-size: 6rem;
-  color: dimgray;
+.ItemPrice{
+  font-family: 'Inter',sans-serif;
+  font-size: 20px;
+  color: black;
+  align-self: center;
+  align-content: center;
 }
 
-body{
-  background-color: aqua;
-}
+
+
+

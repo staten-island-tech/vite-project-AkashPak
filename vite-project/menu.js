@@ -61,7 +61,7 @@
     ItemCat: "Drink",
     ItemPrice: "5$",
     ItemName:
-      "https://media.istockphoto.com/photos/sparkling-water-with-raspberries-and-mint-picture-id477578686?k=6&m=477578686&s=170667a&w=0&h=sgn_pbUbn9x7HBBp-G5KCjcXxAKgFgVitUDhEG1BNYk=.jpg",
+      "https://media.istockphoto.com/photos/sparkling-water-with-raspberries-and-mint-picture-id477578686?k=6&m=477578686&s=170667a&w=0&h=sgn_pbUbn9x7HBBp-G5KCjcXxAKgFgVitUDhEG1BNYk=",
   },
   {
     ItemName: "French Fries",
