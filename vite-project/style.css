@@ -23,7 +23,7 @@
 .Card{
   display: flex;
   margin-top: 100px;
-  width: 26%;
+  width: 18%;
   height: 100%;
  align-items: center;
  flex-direction: column;
@@ -33,8 +33,8 @@
  padding:white 10px 10px 10px 10px;
 }
 .ItemImage{
- height: 2000px;
- width: 5vw;
+ height: 200px;
+ width: 50%;
 }
 
 .ItemPrice{
