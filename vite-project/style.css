@@ -6,22 +6,21 @@
   color: cornflowerblue;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-    
- 
- }
+justify-content: space-between;
+}
+
 
  .Itemtitle{
   font-family: 'Inter', sans-serif;
   font-size: 30px;
   color: white;
+  align-self:center ;
 }
 .Card{
-  display: flex;
   margin-top: 100px;
   width: 18%;
   height: 100%;
