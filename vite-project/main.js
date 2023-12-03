@@ -24,5 +24,5 @@ const Appetis= Menu.filter((Monke)=>Monke.ItemCat.includes("Appetizer"));
 document.querySelector(".Appe").addEventListener("click",Insert(Appetis))
 
 const Fams= Menu.filter((gas)=>gas.ItemSize.includes("Family"));
-document.querySelector(".Family Serving").addEventListener("click",Insert(Fams))
+document.querySelector(".Family Serving").addEventListener("click", Insert(Fams))
 
