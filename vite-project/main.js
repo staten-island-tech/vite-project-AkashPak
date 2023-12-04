@@ -8,7 +8,9 @@ import { Menu } from './menu.js'
 
 
 
-
+function filremv(){
+    document.querySelector(".flex-container").remove
+}
 
 function Insert(dfw){    
 dfw.forEach((d)=> document.querySelector(".flex-container").insertAdjacentHTML("beforebegin",
@@ -21,15 +23,15 @@ dfw.forEach((d)=> document.querySelector(".flex-container").insertAdjacentHTML("
 document.querySelector(".whole").addEventListener("click", Insert(Menu))
 
 const Appetis= Menu.filter((Monke)=>Monke.ItemCat.includes("Appetizer"));
-document.querySelector(".Appe").addEventListener("click",
-document.querySelector(".flex-container").remove,
-Insert(Appetis))
+document.querySelector(".Appe").addEventListener("click", Insert(Appetis))
 
 const Fams= Menu.filter((gas)=>gas.ItemSize.includes("Family"));
 document.querySelector(".Family Serving").addEventListener("click", Insert(Fams))
 
 const main= Menu.filter((da)=>da.ItemCat.includes("Main"));
-document.querySelector(".MainCrs").addEventListener("click",Insert(main))
+document.querySelector(".MainCrs").addEventListener("click",
+filremv(Menu),
+Insert(main))
 
 const sides= Menu.filter((dasf)=>dasf.ItemCat.includes(".Side"));
 document.querySelector(".Sides").addEventListener("click", Insert(sides))
