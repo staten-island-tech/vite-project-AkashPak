@@ -40,15 +40,16 @@ Insert(Fams)});
 
 const main= Menu.filter((da)=>da.ItemCat.includes("Main"));
 DomSelectors.MainCourse.addEventListener("click",
-document.querySelector(".flex-container").innerHTML="",
-Insert(main));
+function(){ 
+remov(),
+Insert(main)});
 
 
 const sides= Menu.filter((dasf)=>dasf.ItemCat.includes(".Side"));
 DomSelectors.Sides.addEventListener("click",
 document.querySelector(".flex-container").innerHTML="",
 Insert(sides));
-
+ 
 
 const dessert= Menu.filter((dx)=> dx.ItemCat.includes(".Dessert"))
 DomSelectors.Dessert.addEventListener("click",
