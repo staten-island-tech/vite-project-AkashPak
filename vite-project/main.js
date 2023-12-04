@@ -31,14 +31,14 @@ function remov(){
 const Appetis= Menu.filter((Monke)=>Monke.ItemCat.includes("Appetizer"));
 DomSelectors.appetize.addEventListener("click",
 function(){
-remov();
+remov(Menu);
 Insert(Appetis)});
 
 
 const Fams= Menu.filter((gas)=>gas.ItemSize.includes("Family"));
 DomSelectors.familyserv.addEventListener("click", 
 function(){
-remov();
+remov(Menu);
 Insert(Fams)});
 
 
