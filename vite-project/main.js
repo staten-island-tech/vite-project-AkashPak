@@ -9,7 +9,7 @@ import { Menu } from './menu.js'
 
 
 function filremv(){
-    document.querySelector(".flex-container").remove
+    document.getElementById(".app").remove
 }
 
 function Insert(dfw){    
