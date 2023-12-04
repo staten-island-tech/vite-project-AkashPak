@@ -15,9 +15,11 @@ dfw.forEach((d)=> document.querySelector(".flex-container").insertAdjacentHTML("
 <h1 class="Itemtitle">${d.ItemName}</h1>
 <img src= "${d.ItemImage}" alt="" class="ItemImage">
 <h2 class="ItemPrice">${d.ItemPrice}</h2>
-</div>`));}
+</div>`));
 
-DomSelectors.wholemen.addEventListener("click", Insert(Menu))
+Insert(Menu)
+}
+
 
 const Appetis= Menu.filter((Monke)=>Monke.ItemCat.includes("Appetizer"));
 DomSelectors.appetize.addEventListener("click", 
@@ -39,8 +41,8 @@ DomSelectors.Sides.addEventListener("click",
 document.querySelector(".flex-container").innerHTML="",
 Insert(sides))
 
-const dessert= Menu.filter((dx)=> dx.ItemCat.includes(".Dessert"))
 DomSelectors.Dessert.addEventListener("click",
-document.querySelector(".flex-container").innerHTML="", 
-Insert(dessert))
+function(){document.querySelector(".flex-container").innerHTML=""
+const dessert= Menu.filter((dx)=> dx.ItemCat.includes(".Dessert"));
+Insert(dessert)});
 
