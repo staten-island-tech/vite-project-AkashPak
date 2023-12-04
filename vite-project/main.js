@@ -10,39 +10,48 @@ import { Menu } from './menu.js'
 
 
 function Insert(dfw){    
-dfw.forEach((d)=> document.querySelector(".flex-container").insertAdjacentHTML("beforebegin",
+dfw.forEach((d)=> {document.querySelector(".flex-container").insertAdjacentHTML("beforebegin",
 `<div class="Card">
 <h1 class="Itemtitle">${d.ItemName}</h1>
 <img src= "${d.ItemImage}" alt="" class="ItemImage">
 <h2 class="ItemPrice">${d.ItemPrice}</h2>
-</div>`));
+</div>`)});
+}
+Insert(Menu);
 
-Insert(Menu)
+function remov(){
+    const remove = document.querySelectorAll(".Card");
+    remove.forEach((dsa)=>dsa.remove())
 }
 
-
 const Appetis= Menu.filter((Monke)=>Monke.ItemCat.includes("Appetizer"));
-DomSelectors.appetize.addEventListener("click", 
-document.querySelector(".flex-container").innerHTML="",
-Insert(Appetis))
+DomSelectors.appetize.addEventListener("click",
+function(){
+remov();
+Insert(Appetis)});
 
-const Fams= Menu.filter((gas)=>gas.ItemSize.includes("Family"));
+
+const Fams= Menu.filter((gas)=>gas.ItemSize === "Family");
 DomSelectors.familyserv.addEventListener("click", 
-document.querySelector(".flex-container").innerHTML="",
-Insert(Fams))
+function(){
+remov();
+Insert(Fams)});
+
 
 const main= Menu.filter((da)=>da.ItemCat.includes("Main"));
 DomSelectors.MainCourse.addEventListener("click",
 document.querySelector(".flex-container").innerHTML="",
-Insert(main))
+Insert(main));
+
 
 const sides= Menu.filter((dasf)=>dasf.ItemCat.includes(".Side"));
 DomSelectors.Sides.addEventListener("click",
 document.querySelector(".flex-container").innerHTML="",
-Insert(sides))
+Insert(sides));
 
+
+const dessert= Menu.filter((dx)=> dx.ItemCat.includes(".Dessert"))
 DomSelectors.Dessert.addEventListener("click",
 function(){document.querySelector(".flex-container").innerHTML=""
-const dessert= Menu.filter((dx)=> dx.ItemCat.includes(".Dessert"));
 Insert(dessert)});
 
