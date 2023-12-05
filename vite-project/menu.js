@@ -83,7 +83,7 @@
     ItemName: "Mango Ice Cream",
     ItemSize: "Family",
     ItemCat: "Dessert",
-    ItemPrice: "%4",
+    ItemPrice: "$4",
     ItemImage:
       "https://www.funfoodfrolic.com/wp-content/uploads/2020/04/Mango-Ice-Cream-Thumbnail.jpg",
   },
