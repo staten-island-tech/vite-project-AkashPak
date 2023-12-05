@@ -11,7 +11,7 @@ import { Menu } from './menu.js'
 
 function Insert(dfw) {
     dfw.forEach((d) => {
-        document.querySelector(".flex-container").insertAdjacentHTML("beforebegin",
+        document.querySelector(".flex-container").insertAdjacentHTML("beforeend",
             `<div class="Card">
 <h1 class="Itemtitle">${d.ItemName}</h1>
 <img src= "${d.ItemImage}" alt="" class="ItemImage">
@@ -83,5 +83,13 @@ DomSelectors.Drinks.addEventListener("click",
         remov();
         Insert(drinks)
     });
-
+document.querySelector(".Theme").addEventListener("click", function(){
+    if( document.body.classList.contains("monotone")){
+        document.body.classList.add("colored");
+        document.body.classList.remove("monotone");
+    } else {
+        document.body.classList.add("monotone");
+        document.body.classList.remove("colored");
+    }
+});
 
